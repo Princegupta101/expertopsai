@@ -1,0 +1,269 @@
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 30px;
+}
+
+.app-header h1 {
+  color: #333;
+  margin: 0;
+  font-size: 2rem;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-info span {
+  color: #666;
+  font-weight: 500;
+}
+
+.app-main {
+  min-height: 400px;
+}
+
+.authenticated-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.unauthenticated-content {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.unauthenticated-content h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.unauthenticated-content p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Button styles */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #545b62;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+/* File upload styles */
+.file-upload {
+  background: #f8f9fa;
+  border: 2px dashed #dee2e6;
+  border-radius: 8px;
+  padding: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.file-upload.drag-over {
+  border-color: #007bff;
+  background: #e3f2fd;
+}
+
+.file-upload h3 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.file-input-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.file-input {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+}
+
+.file-input-label {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.file-input-label:hover {
+  background-color: #0056b3;
+}
+
+.upload-progress {
+  margin-top: 20px;
+  padding: 15px;
+  background: #e8f5e8;
+  border-radius: 5px;
+  color: #155724;
+}
+
+.upload-error {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f8d7da;
+  border-radius: 5px;
+  color: #721c24;
+}
+
+.upload-info {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* File list styles */
+.file-list {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.file-list h3 {
+  padding: 20px;
+  margin: 0;
+  border-bottom: 1px solid #e0e0e0;
+  color: #333;
+}
+
+.file-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.file-item {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.file-item:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.file-preview {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  background: #f8f9fa;
+}
+
+.file-info {
+  padding: 15px;
+}
+
+.file-name {
+  font-weight: 500;
+  margin-bottom: 8px;
+  word-break: break-word;
+  color: #333;
+}
+
+.file-details {
+  font-size: 0.875rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+.file-size {
+  margin-bottom: 4px;
+}
+
+.file-date {
+  margin-bottom: 10px;
+}
+
+.file-url {
+  display: inline-block;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.file-url:hover {
+  text-decoration: underline;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: #666;
+}
+
+.loading-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: #666;
+}
+
+.error-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: #dc3545;
+  background: #f8d7da;
+  border-radius: 5px;
+  margin: 20px;
+}
